@@ -1,0 +1,6 @@
+{
+    "name": "atefa/test_socket",
+    "require": {
+        "workerman/phpsocket.io": "^1.1"
+    }
+}
