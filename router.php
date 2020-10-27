@@ -1,11 +1,18 @@
 <?php
+require_once 'Utils/Db.php';
+require_once 'Models/User.php';
+require_once 'Models/Message.php';
+require_once 'Logic/Interfaces/InterfaceUser.php';
+require_once 'Logic/Implementations/UserImplementation.php';
+
 
 session_start();
 
 if(isset($_GET['controller'])) {
 
     switch ($_GET['controller']) {
-        case '':
+        case 'home':
+            require 'Controllers/HomeController.php';
             break;
         case 'login':
             require 'Controllers/LoginController.php';
