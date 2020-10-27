@@ -9,4 +9,5 @@ return array(
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
     'PHPSocketIO\\' => array($vendorDir . '/workerman/phpsocket.io/src'),
     'Channel\\' => array($vendorDir . '/workerman/channel/src'),
+    '' => array($vendorDir . '/workerman/phpsocket.io-emitter/src'),
 );

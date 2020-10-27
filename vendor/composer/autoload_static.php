@@ -36,11 +36,16 @@ class ComposerStaticInite1603c4cb8e6af2d8c2d5442af2ed66b
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/workerman/phpsocket.io-emitter/src',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite1603c4cb8e6af2d8c2d5442af2ed66b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite1603c4cb8e6af2d8c2d5442af2ed66b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInite1603c4cb8e6af2d8c2d5442af2ed66b::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }

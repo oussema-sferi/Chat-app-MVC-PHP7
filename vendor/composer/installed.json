@@ -68,6 +68,35 @@
         ]
     },
     {
+        "name": "workerman/phpsocket.io-emitter",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/walkor/phpsocket.io-emitter.git",
+            "reference": "f29b9a428209a4eb242ac25134c11375b78e73fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/walkor/phpsocket.io-emitter/zipball/f29b9a428209a4eb242ac25134c11375b78e73fd",
+            "reference": "f29b9a428209a4eb242ac25134c11375b78e73fd",
+            "shasum": ""
+        },
+        "time": "2016-06-14T09:10:26+00:00",
+        "type": "project",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "": "./src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "homepage": "http://www.workerman.net"
+    },
+    {
         "name": "workerman/workerman",
         "version": "v4.0.14",
         "version_normalized": "4.0.14.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56e160a69cf284f7dac4bb31a5e989e4",
+    "content-hash": "bcda24b197a26c90d787eec9fad9d8e5",
     "packages": [
         {
             "name": "workerman/channel",
@@ -69,6 +69,33 @@
                 "Socket.io"
             ],
             "time": "2020-03-20T10:42:09+00:00"
+        },
+        {
+            "name": "workerman/phpsocket.io-emitter",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/phpsocket.io-emitter.git",
+                "reference": "f29b9a428209a4eb242ac25134c11375b78e73fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/phpsocket.io-emitter/zipball/f29b9a428209a4eb242ac25134c11375b78e73fd",
+                "reference": "f29b9a428209a4eb242ac25134c11375b78e73fd",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://www.workerman.net",
+            "time": "2016-06-14T09:10:26+00:00"
         },
         {
             "name": "workerman/workerman",
