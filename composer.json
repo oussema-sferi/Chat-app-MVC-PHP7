@@ -1,5 +1,5 @@
 {
-    "name": "atefa/test_socket",
+    "name": "oussemasferi/socket_chat_app",
     "require": {
         "workerman/phpsocket.io": "^1.1",
         "workerman/phpsocket.io-emitter": "^1.0"
