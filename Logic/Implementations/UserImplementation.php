@@ -28,4 +28,22 @@ class UserImplementation implements InterfaceUser {
         return false;
 
     }
+
+    public static function SignUp(string $username, string $password, string $fullName): void
+    {
+        $db = Db::getInstance();
+        $sql="INSERT INTO user (username, password, fullname) VALUES ('$username', '$password', '$fullName')";
+        $db->query($sql);
+
+        $sqlFetch = " SELECT * FROM user WHERE (username = '$username') AND (password = '$password')";
+        $query=$db->query($sqlFetch);
+        $result=$query->fetchAll();
+        $newUser = new User();
+        $newUser->setId($result[0]['id']);
+        $newUser->setUsername($result[0]['username']);
+        $newUser->setPassword($result[0]['password']);
+        $newUser->setFullName($result[0]['fullname']);
+        $_SESSION['user'] = $newUser;
+
+    }
 }

@@ -17,6 +17,12 @@ if(isset($_GET['controller'])) {
         case 'login':
             require 'Controllers/LoginController.php';
             break;
+        case 'create-account':
+            require 'Controllers/CreateAccountController.php';
+            break;
+        case 'signup':
+            require 'Controllers/SignUpController.php';
+            break;
         default:
             echo '404 Not Found';
     }

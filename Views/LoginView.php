@@ -16,6 +16,7 @@
         <br>
         <br>
         <input type="submit" value="Login" >
+        <button name="tosignup">Sign Up</button>
     </form>
     </fieldset>
 </body>
