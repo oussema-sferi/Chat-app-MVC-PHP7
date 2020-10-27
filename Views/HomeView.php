@@ -16,13 +16,13 @@
     function sendMessage(){
         console.log('message sent...');
         let message = document.getElementById('message-input');
-        socket.emit('message-sent',{content:message.value})
-        document.getElementById('message-box').append(`<p>You: ${message.value}</p>`)
+        socket.emit('message-sent',{content:message.value, username: "<?php echo $_SESSION['user']->getUsername() ?>",id:<?php echo $_SESSION['user']->getId() ?>})
+        document.getElementById('message-box').innerHTML += `<div>You: ${message.value}</div>`
     }
     socket.on('new-message',(data)=>{
         console.log(data);
         console.log('message receiiiiiived');
-        document.getElementById("message-box").append(`<p> User : ${data.message.content} </p>}`);
+        document.getElementById("message-box").innerHTML += `<div> ${data.message.username} : ${data.message.content} </div>`;
     });
 
 
